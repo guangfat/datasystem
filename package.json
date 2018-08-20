@@ -1,0 +1,19 @@
+{
+  "name": "datasystem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guangfat/datasystem.git"
+  },
+  "author": "tangguangfa <tangguangfa@163.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guangfat/datasystem/issues"
+  },
+  "homepage": "https://github.com/guangfat/datasystem#readme"
+}
