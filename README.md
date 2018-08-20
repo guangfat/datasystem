@@ -21,7 +21,11 @@ A small library that you can share data and receive notification when data chang
     // somewhere you want to get the latest value of your instrested data, you call addDataListener. Whenever the data changed, your callback will be called.
     // this function will return an id, so that you can unsubscribe data by calling removeDataListener, after this you will not receive data change message.
     // for this example, whenever 'test1' changed after calling dataProvider.setData, callback will be called
-    const removeid = dataProvider.addDataListener('test1', callback);
+    const removeid = dataProvider.addDataListener('test1', (event, data) => {
+       if (event === 'test1') {
+           // do some work here
+       }
+    });
 
     // unsubscribe data by calling removeDataListener
     dataProvider.removeDataListener('test1', removeid);
